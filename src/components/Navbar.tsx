@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800/50 transition-colors">
+    <header className="sticky top-0 z-50 bg-white dark:bg-zinc-900 shadow-md dark:shadow-zinc-900/50 transition-colors">
       {/* Top bar */}
       <div className="bg-primary text-white text-xs sm:text-sm py-1.5 sm:py-2">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 flex justify-between items-center">

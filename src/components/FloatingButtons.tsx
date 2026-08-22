@@ -25,7 +25,7 @@ export default function FloatingButtons() {
         }`}
       >
         {waOpen && (
-          <div className="absolute bottom-full mb-2 right-0 bg-white dark:bg-[#1a0505] rounded-2xl shadow-2xl p-4 sm:p-6 w-[calc(100vw-2rem)] sm:w-80 max-w-80 border border-gray-100 dark:border-red-900/20">
+          <div className="absolute bottom-full mb-2 right-0 bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl p-4 sm:p-6 w-[calc(100vw-2rem)] sm:w-80 max-w-80 border border-gray-100 dark:border-zinc-700/50">
             <div className="mb-3 sm:mb-4">
               <h4 className="font-bold text-gray-900 dark:text-white text-sm sm:text-base">Need Blood?</h4>
               <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">

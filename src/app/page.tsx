@@ -5,7 +5,6 @@ import {
   Shield,
   Users,
   Phone,
-  ArrowRight,
   CheckCircle2,
   Star,
   Activity,
@@ -18,21 +17,10 @@ import {
   Syringe,
 } from "lucide-react";
 
-const bloodGroups = [
-  { group: "A+", available: true, units: 12 },
-  { group: "A-", available: true, units: 4 },
-  { group: "B+", available: true, units: 15 },
-  { group: "B-", available: true, units: 3 },
-  { group: "AB+", available: true, units: 6 },
-  { group: "AB-", available: false, units: 0 },
-  { group: "O+", available: true, units: 18 },
-  { group: "O-", available: true, units: 5 },
-];
-
 const features = [
   { icon: Clock, title: "24/7 Available", description: "Round-the-clock blood availability for emergencies, any time, any day." },
   { icon: Shield, title: "100% Safe & Tested", description: "Every unit undergoes rigorous testing for HIV, Hepatitis, Malaria & more." },
-  { icon: Heart, title: "Completely Free", description: "Charitable service - no charges for blood, ever. We believe in saving lives." },
+  { icon: Heart, title: "Charitable Service", description: "Dedicated to saving lives with affordable and accessible blood bank services." },
   { icon: Droplets, title: "All Blood Groups", description: "Comprehensive stock of all 8 blood groups including rare types." },
   { icon: Users, title: "1000+ Donors", description: "Growing community of verified and healthy blood donors in Gorakhpur." },
   { icon: Stethoscope, title: "Component Separation", description: "Advanced component separation - platelets, plasma, RBC, and more." },
@@ -40,7 +28,7 @@ const features = [
 
 const steps = [
   { step: "1", title: "Call Us", description: "Reach us anytime for emergency blood requirements." },
-  { step: "2", title: "Health Screening", description: "Free health checkup to ensure safe donation." },
+  { step: "2", title: "Health Screening", description: "Health checkup to ensure safe donation." },
   { step: "3", title: "Safe Donation", description: "Painless, hygienic blood collection by trained professionals." },
   { step: "4", title: "Save Lives", description: "Your single donation can save up to 3 lives in need." },
 ];
@@ -48,23 +36,23 @@ const steps = [
 const testimonials = [
   { name: "Rajesh Kumar", text: "Radhey Radhey Blood Bank saved my mother's life during an emergency at 2 AM. They had blood available instantly. Truly a lifesaver!", rating: 5 },
   { name: "Priya Sharma", text: "I have been donating here for 2 years. The staff is incredibly professional and the process is completely safe. Best blood bank in Gorakhpur!", rating: 5 },
-  { name: "Amit Singh", text: "When my father needed surgery, they provided all required blood components free of cost. Their charitable work is commendable.", rating: 5 },
+  { name: "Amit Singh", text: "When my father needed surgery, they provided all required blood components quickly and professionally. Their service is commendable.", rating: 5 },
   { name: "Sunita Devi", text: "My husband met with a serious accident and we needed O- blood urgently at midnight. Radhey Radhey Blood Bank arranged it within 30 minutes. God bless this team!", rating: 5 },
   { name: "Vikram Yadav", text: "I donated blood here for the first time. The staff made me feel so comfortable and explained everything. Now I donate every 3 months. Highly recommended!", rating: 5 },
-  { name: "Neha Gupta", text: "Best blood bank in entire Gorakhpur! My son needed platelets during dengue and they provided it free. These people are doing saintly work.", rating: 5 },
-  { name: "Ravi Verma", text: "Transparent, hygienic, and completely free. I have referred many families here and everyone had a great experience. True charitable service!", rating: 5 },
+  { name: "Neha Gupta", text: "Best blood bank in entire Gorakhpur! My son needed platelets during dengue and they arranged it promptly. These people are doing great work.", rating: 5 },
+  { name: "Ravi Verma", text: "Transparent, hygienic, and professional. I have referred many families here and everyone had a great experience. True charitable service!", rating: 5 },
   { name: "Anita Singh", text: "We live in a rural area near Sikariganj. During my delivery, I needed blood urgently. Radhey Radhey delivered it to the hospital on time. Forever grateful!", rating: 5 },
 ];
 
 const stats = [
   { number: "5000+", label: "Lives Saved" },
   { number: "1000+", label: "Active Donors" },
-  { number: "100%", label: "Free Service" },
+  { number: "10K+", label: "Units Issued" },
   { number: "24/7", label: "Availability" },
 ];
 
 const faqs = [
-  { q: "Is blood really free?", a: "Yes, 100% free. We are a charitable blood bank and never charge for blood." },
+  { q: "Is blood really free?", a: "We are a charitable blood bank. Please contact us for pricing details and assistance." },
   { q: "How can I donate blood?", a: "Just call us or visit our centre. You should be 18-65 years old, weigh above 45kg, and be in good health." },
   { q: "How often can I donate?", a: "Every 3 months for males and every 4 months for females." },
   { q: "Is the blood safe?", a: "Yes. Every unit is tested for HIV, Hepatitis B & C, Malaria, and Syphilis before issue." },
@@ -91,7 +79,7 @@ export default function Home() {
               </h1>
               <p className="text-base sm:text-lg text-muted max-w-lg leading-relaxed">
                 Radhey Radhey Charitable Blood &amp; Component Centre provides{" "}
-                <strong>free, safe, and 24/7 blood availability</strong> in
+                <strong>safe, and 24/7 blood availability</strong> in
                 Gorakhpur. No charges, no conditions - just saving lives.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -105,7 +93,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex items-center gap-4 sm:gap-6 md:gap-8 pt-2 sm:pt-4 flex-wrap">
-                {["100% Free", "24/7 Available", "Safe & Tested"].map((item) => (
+                {["24/7 Available", "Safe & Tested", "All Blood Groups"].map((item) => (
                   <div key={item} className="flex items-center gap-1.5 sm:gap-2">
                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-success" />
                     <span className="text-xs sm:text-sm text-muted">{item}</span>
@@ -163,7 +151,7 @@ export default function Home() {
                   we have grown into one of the most trusted blood banks in the region.
                 </p>
                 <p>
-                  Our charitable model ensures that blood is provided <strong>free of cost</strong> to
+                  Our charitable model ensures that blood is provided <strong>affordably and accessible</strong> to
                   all patients in need. Through the generosity of our donors and the
                   dedication of our team, we have saved thousands of lives.
                 </p>
@@ -193,7 +181,7 @@ export default function Home() {
               </div>
               <div className="space-y-3 sm:space-y-4">
                 {[
-                  "Free blood for every patient in need",
+                  "Safe and tested blood components",
                   "100% tested and safe blood components",
                   "Advanced component separation facility",
                   "Trained and certified medical professionals",
@@ -207,47 +195,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Blood Stock */}
-      <section id="blood-stock" className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#111113]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
-              Live Blood Stock
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-3 sm:mb-4">
-              Blood Availability in Gorakhpur
-            </h2>
-            <p className="text-muted max-w-2xl mx-auto text-sm sm:text-base px-2">
-              Real-time blood stock availability. All blood groups are tested and safe for transfusion.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            {bloodGroups.map((item) => (
-              <div
-                key={item.group}
-                className={`glass-card dark:bg-zinc-900/60 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center border-2 transition-all hover:shadow-lg ${
-                  item.available ? "border-green-200 dark:border-green-800/50 hover:border-green-400" : "border-red-200 dark:border-zinc-700 opacity-60"
-                }`}
-              >
-                <div className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-full flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 ${
-                  item.available ? "bg-red-100 dark:bg-zinc-800 text-primary" : "bg-gray-100 dark:bg-zinc-800/60 text-gray-400"
-                }`}>
-                  {item.group}
-                </div>
-                <div className={`text-xs sm:text-sm font-semibold ${item.available ? "text-green-600 dark:text-green-400" : "text-red-500 dark:text-red-400"}`}>
-                  {item.available ? `${item.units} Units` : "Unavailable"}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-6 sm:mt-8">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold hover:bg-primary-dark transition-colors text-sm sm:text-base min-h-[44px]">
-              Request Blood Now <ArrowRight className="w-4 h-4" />
-            </a>
           </div>
         </div>
       </section>
@@ -428,11 +375,11 @@ export default function Home() {
             in Gorakhpur who are making a difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <a href="tel:+917860810516" className="inline-flex items-center justify-center gap-2 bg-white text-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors min-h-[48px]">
+            <a href="tel:+919140990376" className="inline-flex items-center justify-center gap-2 bg-white text-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors min-h-[48px]">
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
               Call Now for Blood
             </a>
-            <a href="https://wa.me/917860810516?text=Hi!%20I%20need%20blood%20from%20Radhey%20Radhey%20Blood%20Bank" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#128C7E] transition-colors min-h-[48px]">
+            <a href="https://wa.me/919140990376?text=Hi!%20I%20need%20blood%20from%20Radhey%20Radhey%20Blood%20Bank" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#128C7E] transition-colors min-h-[48px]">
               WhatsApp Us
             </a>
           </div>
@@ -445,7 +392,7 @@ export default function Home() {
             <div>
               <Phone className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mx-auto mb-2 sm:mb-3 text-white/80" />
               <h4 className="font-bold mb-0.5 sm:mb-1 text-sm sm:text-base">Phone</h4>
-              <p className="text-white/70 text-xs sm:text-sm">+91 78608 10516</p>
+              <p className="text-white/70 text-xs sm:text-sm">+91 91409 90376</p>
             </div>
             <div>
               <Clock className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mx-auto mb-2 sm:mb-3 text-white/80" />

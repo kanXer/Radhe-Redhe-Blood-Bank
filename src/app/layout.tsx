@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Radhey Radhey Charitable Blood Bank",
   },
   description:
-    "Radhey Radhey Charitable Blood & Component Centre - Best blood bank in Gorakhpur, Uttar Pradesh. 24/7 blood availability, safe blood donation, all blood groups. Located in Sikariganj, Imlidih Bujurg. Free blood donation camps and charitable services.",
+    "Radhey Radhey Charitable Blood & Component Centre - Best blood bank in Gorakhpur, Uttar Pradesh. 24/7 blood availability, safe blood donation, all blood groups. Located in Sikariganj, Imlidih Bujurg. Blood donation camps and charitable services.",
   keywords: [
     "blood bank gorakhpur",
     "best blood bank gorakhpur",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "charitable blood bank",
     "radhey radhey blood bank",
     "blood bank sikariganj",
-    "free blood donation",
+    "blood donation",
     "blood components gorakhpur",
     "emergency blood gorakhpur",
     "blood bank near me gorakhpur",
@@ -64,11 +64,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     alternateName: "Radhey Radhey Blood Bank",
     description: "Best blood bank in Gorakhpur offering 24/7 blood availability, safe blood donation, all blood groups, and charitable blood services.",
     url: siteUrl,
-    telephone: "+917860810516",
+    telephone: "+919140990376",
     address: { "@type": "PostalAddress", streetAddress: "Sikariganj, Jaddupatti, Sikariganj", addressLocality: "Imlidih Bujurg", addressRegion: "Uttar Pradesh", postalCode: "273213", addressCountry: "IN" },
     geo: { "@type": "GeoCoordinates", latitude: 26.7509, longitude: 83.3783 },
     openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" }],
-    priceRange: "Free",
+    priceRange: "₹",
     aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "1" },
     sameAs: ["https://share.google/OL2mYs8Lt4GIWGmo3"],
   };

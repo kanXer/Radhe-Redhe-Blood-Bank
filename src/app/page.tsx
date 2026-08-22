@@ -76,11 +76,11 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section id="home" className="relative bg-gradient-to-br from-red-50/80 via-white/60 to-orange-50/80 dark:from-[#050505] dark:via-[#120202] dark:to-[#050505] hero-pattern overflow-hidden backdrop-blur-sm">
+      <section id="home" className="relative bg-gradient-to-br from-red-50/80 via-white/60 to-orange-50/80 dark:from-[#0a0a0a] dark:via-[#111113] dark:to-[#0a0a0a] hero-pattern overflow-hidden backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-5 sm:space-y-6 md:space-y-8">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-primary-light dark:bg-red-900/40 dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
                 <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-pulse" />
                 Gorakhpur&apos;s Most Trusted Blood Bank
               </div>
@@ -99,7 +99,7 @@ export default function Home() {
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                   Request Blood Now
                 </a>
-                <a href="#donate" className="inline-flex items-center justify-center gap-2 bg-white dark:bg-[#0a0101] text-primary border-2 border-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-primary-light dark:bg-red-900/40 dark:hover:bg-gray-700 transition-all min-h-[48px]">
+                <a href="#donate" className="inline-flex items-center justify-center gap-2 bg-white dark:bg-zinc-900 text-primary border-2 border-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-primary-light dark:hover:bg-zinc-800 transition-all min-h-[48px]">
                   <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
                   Become a Donor
                 </a>
@@ -145,11 +145,11 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="py-14 sm:py-16 md:py-20 dark:bg-[#050505]">
+      <section id="about" className="py-14 sm:py-16 md:py-20 dark:bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-center">
             <div>
-              <span className="inline-block bg-primary-light dark:bg-red-900/40 dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+              <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 About Us
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 sm:mb-6">
@@ -175,8 +175,8 @@ export default function Home() {
                   { icon: Clock, text: "24/7 Operations" },
                   { icon: Heart, text: "100% Charitable" },
                 ].map((item) => (
-                  <div key={item.text} className="flex items-center gap-2 sm:gap-3 bg-gray-50 dark:bg-red-900/20 p-2.5 sm:p-3 rounded-xl">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary-light dark:bg-red-900/40 dark:bg-red-900/40 rounded-lg flex items-center justify-center shrink-0">
+                  <div key={item.text} className="flex items-center gap-2 sm:gap-3 bg-gray-50 dark:bg-zinc-800/60 p-2.5 sm:p-3 rounded-xl">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary-light dark:bg-zinc-800 rounded-lg flex items-center justify-center shrink-0">
                       <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
                     <span className="text-xs sm:text-sm font-semibold text-secondary">{item.text}</span>
@@ -184,7 +184,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="glass-card dark:bg-[#100202]/60 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-red-100 dark:border-red-900/20">
+            <div className="glass-card dark:bg-zinc-900/60 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-gray-100 dark:border-zinc-700/50">
               <div className="text-center mb-6 sm:mb-8">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
@@ -212,10 +212,10 @@ export default function Home() {
       </section>
 
       {/* Blood Stock */}
-      <section id="blood-stock" className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#0a0101]">
+      <section id="blood-stock" className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#111113]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="inline-block bg-primary-light dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+            <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Live Blood Stock
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-3 sm:mb-4">
@@ -229,12 +229,12 @@ export default function Home() {
             {bloodGroups.map((item) => (
               <div
                 key={item.group}
-                className={`glass-card dark:bg-[#100202]/60 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center border-2 transition-all hover:shadow-lg ${
-                  item.available ? "border-green-200 dark:border-green-900/40 hover:border-green-400" : "border-red-200 dark:border-red-900/40 opacity-60"
+                className={`glass-card dark:bg-zinc-900/60 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center border-2 transition-all hover:shadow-lg ${
+                  item.available ? "border-green-200 dark:border-green-800/50 hover:border-green-400" : "border-red-200 dark:border-zinc-700 opacity-60"
                 }`}
               >
                 <div className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-full flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 ${
-                  item.available ? "bg-red-100 dark:bg-red-900/40 text-primary" : "bg-gray-100 dark:bg-gray-800 text-gray-400"
+                  item.available ? "bg-red-100 dark:bg-zinc-800 text-primary" : "bg-gray-100 dark:bg-zinc-800/60 text-gray-400"
                 }`}>
                   {item.group}
                 </div>
@@ -253,10 +253,10 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section className="py-14 sm:py-16 md:py-20 dark:bg-[#050505]">
+      <section className="py-14 sm:py-16 md:py-20 dark:bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="inline-block bg-primary-light dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+            <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Why Choose Us
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-3 sm:mb-4">
@@ -268,8 +268,8 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {features.map((feature) => (
-              <div key={feature.title} className="glass-card dark:bg-[#100202]/60 p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-gray-100 dark:border-red-900/20 hover:shadow-xl transition-all hover:-translate-y-1 group">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-primary-light dark:bg-red-900/40 rounded-xl flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:bg-primary transition-colors">
+              <div key={feature.title} className="glass-card dark:bg-zinc-900/60 p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-gray-100 dark:border-zinc-700/50 hover:shadow-xl transition-all hover:-translate-y-1 group">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-primary-light dark:bg-zinc-800 rounded-xl flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:bg-primary transition-colors">
                   <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-secondary mb-2 sm:mb-3">{feature.title}</h3>
@@ -281,10 +281,10 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#0a0101]">
+      <section id="services" className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#111113]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="inline-block bg-primary-light dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+            <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Our Services
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-3 sm:mb-4">
@@ -301,8 +301,8 @@ export default function Home() {
               { icon: Thermometer, title: "Fresh Frozen Plasma", desc: "For burn victims and clotting factor deficiencies." },
               { icon: TestTube, title: "Packed RBC", desc: "For severe anemia and chronic blood loss cases." },
             ].map((service) => (
-              <div key={service.title} className="glass-card dark:bg-[#100202]/60 rounded-xl sm:rounded-2xl p-5 sm:p-6 text-center hover:shadow-lg transition-all border border-gray-100 dark:border-red-900/20">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-primary-light dark:bg-red-900/40 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+              <div key={service.title} className="glass-card dark:bg-zinc-900/60 rounded-xl sm:rounded-2xl p-5 sm:p-6 text-center hover:shadow-lg transition-all border border-gray-100 dark:border-zinc-700/50">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-primary-light dark:bg-zinc-800 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <service.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary" />
                 </div>
                 <h3 className="font-bold text-secondary mb-1.5 sm:mb-2 text-sm sm:text-base">{service.title}</h3>
@@ -355,10 +355,10 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-14 sm:py-16 md:py-20 dark:bg-[#050505]">
+      <section id="testimonials" className="py-14 sm:py-16 md:py-20 dark:bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="inline-block bg-primary-light dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+            <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Testimonials
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-3 sm:mb-4">
@@ -371,7 +371,7 @@ export default function Home() {
           {/* Mobile: 1-col scroll, Tablet: 2-col, Desktop: 4-col */}
           <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 overflow-x-auto pb-4 sm:pb-0 snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0">
             {testimonials.map((t) => (
-              <div key={t.name} className="glass-card dark:bg-[#100202]/60 p-6 sm:p-7 rounded-xl sm:rounded-2xl border border-gray-100 dark:border-red-900/20 shadow-sm hover:shadow-lg transition-all min-w-[220px] sm:min-w-0 snap-start shrink-0 flex flex-col min-h-[280px] sm:min-h-[300px]">
+              <div key={t.name} className="glass-card dark:bg-zinc-900/60 p-6 sm:p-7 rounded-xl sm:rounded-2xl border border-gray-100 dark:border-zinc-700/50 shadow-sm hover:shadow-lg transition-all min-w-[220px] sm:min-w-0 snap-start shrink-0 flex flex-col min-h-[280px] sm:min-h-[300px]">
                 <div className="flex gap-0.5 sm:gap-1 mb-4 sm:mb-5">
                   {Array.from({ length: t.rating }).map((_, i) => (
                     <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" />
@@ -379,7 +379,7 @@ export default function Home() {
                 </div>
                 <p className="text-muted mb-5 sm:mb-6 leading-relaxed text-sm sm:text-base flex-1">&quot;{t.text}&quot;</p>
                 <div className="flex items-center gap-2.5 sm:gap-3 mt-auto">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 bg-primary-light dark:bg-red-900/40 rounded-full flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 bg-primary-light dark:bg-zinc-800 rounded-full flex items-center justify-center shrink-0">
                     <span className="text-primary font-bold text-xs sm:text-sm">
                       {t.name.split(" ").map((n) => n[0]).join("")}
                     </span>
@@ -396,10 +396,10 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#0a0101]">
+      <section className="py-14 sm:py-16 md:py-20 bg-gray-50 dark:bg-[#111113]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="inline-block bg-primary-light dark:bg-red-900/40 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+            <span className="inline-block bg-primary-light dark:bg-zinc-800 text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               FAQ
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-3 sm:mb-4">
@@ -408,7 +408,7 @@ export default function Home() {
           </div>
           <div className="space-y-3 sm:space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.q} className="glass-card dark:bg-[#100202]/60 rounded-xl p-4 sm:p-6 border border-gray-100 dark:border-red-900/20">
+              <div key={faq.q} className="glass-card dark:bg-zinc-900/60 rounded-xl p-4 sm:p-6 border border-gray-100 dark:border-zinc-700/50">
                 <h3 className="font-bold text-secondary mb-1.5 sm:mb-2 text-sm sm:text-base">{faq.q}</h3>
                 <p className="text-muted text-xs sm:text-sm leading-relaxed">{faq.a}</p>
               </div>

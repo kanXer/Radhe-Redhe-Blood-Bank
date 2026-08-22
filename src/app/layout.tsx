@@ -85,7 +85,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body className="min-h-screen flex flex-col antialiased bg-white dark:bg-[#050505] text-gray-900 dark:text-gray-100 transition-colors" style={{ fontFamily: "'Poppins', Arial, Helvetica, sans-serif" }}>
+      <body className="min-h-screen flex flex-col antialiased bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 transition-colors" style={{ fontFamily: "'Poppins', Arial, Helvetica, sans-serif" }}>
         <ThemeProvider>
           <SmoothScroll />
           <Navbar />

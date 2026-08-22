@@ -13,7 +13,7 @@ export default function FloatingButtons() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const phoneNumber = "917860810516";
+  const phoneNumber = "919140990376";
   const message = "Hi! I need blood donation assistance from Radhey Radhey Charitable Blood Bank.";
 
   return (

@@ -1,25 +1,8 @@
 import { Heart, Phone, Mail, MapPin, Clock } from "lucide-react";
 
-const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
-
 export default function Footer() {
   return (
     <footer className="bg-secondary text-white">
-      {/* Blood Group Ticker */}
-      <div className="bg-primary py-2.5 sm:py-3 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4">
-          <div className="flex items-center justify-center gap-1.5 sm:gap-3 flex-wrap text-xs sm:text-sm font-semibold">
-            <span className="text-white/80 shrink-0">Available:</span>
-            {bloodGroups.map((group) => (
-              <span key={group} className="bg-white/20 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-white">
-                {group}
-              </span>
-            ))}
-            <span className="text-white/80 ml-1 sm:ml-2 shrink-0">24/7</span>
-          </div>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* About */}
@@ -37,7 +20,7 @@ export default function Footer() {
             </div>
             <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
               A charitable blood bank committed to saving lives through safe,
-              reliable, and free blood donation services in Gorakhpur.
+              reliable blood bank services in Gorakhpur.
             </p>
           </div>
 
@@ -49,7 +32,6 @@ export default function Footer() {
                 { href: "#home", label: "Home" },
                 { href: "#about", label: "About Us" },
                 { href: "#services", label: "Services" },
-                { href: "#blood-stock", label: "Blood Stock" },
                 { href: "#donate", label: "Donate Blood" },
                 { href: "#testimonials", label: "Testimonials" },
               ].map((link) => (
@@ -76,7 +58,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5 sm:gap-3">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary shrink-0" />
-                <span className="text-white/70 text-xs sm:text-sm">+91 78608 10516</span>
+                <span className="text-white/70 text-xs sm:text-sm">+91 91409 90376</span>
               </li>
               <li className="flex items-center gap-2.5 sm:gap-3">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary shrink-0" />
@@ -103,11 +85,11 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full shrink-0 mt-1" />
-                Free health checkup after donation
+                Health checkup after donation
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full shrink-0 mt-1" />
-                No charge for blood - ever
+                Professional medical staff
               </li>
             </ul>
             <a

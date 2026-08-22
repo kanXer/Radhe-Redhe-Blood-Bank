@@ -9,7 +9,6 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#blood-stock", label: "Blood Stock" },
   { href: "#donate", label: "Donate" },
   { href: "#testimonials", label: "Reviews" },
   { href: "#contact", label: "Contact" },

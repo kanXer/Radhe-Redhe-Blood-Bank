@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   creator: "Radhey Radhey Charitable Blood & Component Centre",
   publisher: "Radhey Radhey Charitable Blood & Component Centre",
   formatDetection: { email: false, address: false, telephone: false },
+  manifest: "/manifest.webmanifest",
+  category: "health",
+  applicationName: "Radhey Radhey Charitable Blood & Component Centre",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -91,6 +94,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#DC2626" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="geo.region" content="IN-UP" />
+        <meta name="geo.placename" content="Gorakhpur, Uttar Pradesh, India" />
+        <meta name="ICBM" content="26.7509, 83.3783" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="min-h-screen flex flex-col antialiased bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 transition-colors" style={{ fontFamily: "'Poppins', Arial, Helvetica, sans-serif" }}>

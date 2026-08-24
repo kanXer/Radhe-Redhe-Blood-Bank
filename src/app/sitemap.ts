@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://radheyradheybloodbank.com";
+  const baseUrl = "https://radheyradheybloodcentre.in";
   return [
     {
       url: baseUrl,

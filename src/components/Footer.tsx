@@ -112,7 +112,7 @@ export default function Footer() {
           <p className="text-white/50 text-xs sm:text-sm">
             Powered by{" "}
             <a
-              href="https://nexusdigitalmarketing.shop"
+              href="https://thenexusdigital.in"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-white transition-colors font-semibold"
